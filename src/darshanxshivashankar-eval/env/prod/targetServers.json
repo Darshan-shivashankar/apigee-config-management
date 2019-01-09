@@ -6,12 +6,6 @@
     "port": 443
   },
   {
-    "name": "egift-cloud-east",
-    "host": "prod01.gifts.kaiser.com",
-    "isEnabled": true,
-    "port": 443
-  },
-  {
     "host": "test14host.openapi.kaiser.com",
     "isEnabled": true,
     "name": "openapi2",
