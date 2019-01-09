@@ -1,0 +1,30 @@
+[
+    {
+        "entry": [
+            {
+                "name": "uswest-traffic-percent",
+                "value": "0"
+            },
+            {
+                "name": "region-override",
+                "value": "false"
+            }
+        ],
+        "name": "oapi-addressverification-cloud-settings-org",
+        "encrypted" : "false"
+    },
+    {
+        "entry": [
+            {
+                "name": "Mock-Mfa-Get",
+                "value": "true"
+            },
+            {
+                "name": "mfa-global-feature-enabled",
+                "value": "true"
+            }
+        ],
+        "name": "oapi-mfa-feature-settings-org",
+        "encrypted" : "false"
+    }
+]
