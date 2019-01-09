@@ -1,0 +1,38 @@
+[
+  {
+    "name": "google-jwt-cache",
+    "description": "google-jwt-cache",
+    "expirySettings": {
+      "timeoutInSec": {
+        "value": "120"
+      },
+      "valuesNull": "false"
+    },
+    "diskSizeInMB": 0,
+    "distributed": true,
+    "inMemorySizeInKB": 0,
+    "maxElementsInMemory": 0,
+    "maxElementsOnDisk": 0,
+    "overflowToDisk": false,
+    "persistent": false,
+    "skipCacheIfElementSizeInKBExceeds": "512"
+  },
+  {
+    "name": "oapi_appsettings_cache",
+    "description": "oapi_appsettings_cache",
+    "expirySettings": {
+      "timeoutInSec": {
+        "value": "300"
+      },
+      "valuesNull": "false"
+    },
+    "diskSizeInMB": 0,
+    "distributed": true,
+    "inMemorySizeInKB": 0,
+    "maxElementsInMemory": 0,
+    "maxElementsOnDisk": 0,
+    "overflowToDisk": false,
+    "persistent": false,
+    "skipCacheIfElementSizeInKBExceeds": "512"
+  }
+]
