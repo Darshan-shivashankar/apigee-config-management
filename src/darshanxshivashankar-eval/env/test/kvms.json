@@ -6,6 +6,10 @@
       {
         "name": "CARSUploadDocService_v10",
         "value": "{\"Endpoints\":[{\"Endpoint\":{\"name\":\"Dev end point\",\"url\":\"https://cds-dev.appl.kp.org/CARSSaveDocWS/UploadDocService\",\"environments\":[{\"environment\":\"Development\"}],\"state\":\"Online\",\"regions\":[{\"region\":\"NATL\"}],\"envlbl\":\"\",\"urn\":\"\"}},{\"Endpoint\":{\"name\":\"Dev end point\",\"url\":\"https://cds-qa.appl.kp.org/CARSSaveDocWS/UploadDocService\",\"environments\":[{\"environment\":\"Development\"}],\"state\":\"Online\",\"regions\":[{\"region\":\"NATL\"}],\"envlbl\":\"qa\",\"urn\":\"\"}}]}"
+      },
+      {
+        "name": "NPS_Rating_Engine_Overrides_Services_v10",
+        "value": "{\"Endpoints\":[{\"Endpoint\":{\"name\":\"Dev end point\",\"url\":\"https://nps-dev.appl.kp.org/services/override\",\"environments\":[{\"environment\":\"Development\"}],\"state\":\"Online\",\"regions\":[{\"region\":\"NATL\"}],\"envlbl\":\"\",\"urn\":\"\"}}]}"
       }
     ]
   },
@@ -16,6 +20,10 @@
       {
         "name": "CARSUploadDocService_v10",
         "value": "{   \"service-type\": \"rest\",   \"inout-type\": \"json\",   \"threat\": \"THR_Threat_REST_JSON_v1\",   \"security\": {     \"flowname\": \"Bypass\",     \"security-AuthN\": \"true\",     \"security-AuthZ\": \"true\",     \"security-header\": \"Bypass\",     \"remove-security-header\": \"true\",     \"uri\": \"/service/hp_admin/dms/CARSUploadDocService/REST/v1\"   },   \"routing\": {     \"flowname\": \"RTE_NonKPHC_v1\",     \"xpath-options\": {       \"region\": \"[local-name()='Envelope']/*[local-name()='Body']//*[local-name()='getData']/*[local-name()='region']\",       \"mrn\": \"\",       \"mrntype\": \"\"     },     \"constants\": {       \"region\": \"\",       \"envlbl\": \"\",       \"urn\": \"\"     }   },   \"logging\": {     \"flowname\": \"LOG_Req_Res_Err_v1\",     \"log_everything\": \"true\",     \"gal_original_destination\": \"CARSDocService_KPCanonicalXML\",     \"custom-fields-request\": [     ]   },   \"schema-validation\": {     \"request\": \"true\",     \"response\": \"true\",     \"fault\": \"true\"   },   \"req-transformation\": \"XFM_01_Req_Scrub_BasicAuth_Header\" }"
+      },
+      {
+        "name": "NPS_Rating_Engine_Overrides_Services_v10",
+        "value": "{   \"service-type\": \"rest\",   \"inout-type\": \"json\",   \"threat\": \"THR_Threat_REST_JSON_v1\",   \"security\": {     \"flowname\": \"SEC_AAA_v1\",     \"security-AuthN\": \"true\",     \"security-AuthZ\": \"true\",     \"security-header\": \"Authorization\",     \"remove-security-header\": \"true\",     \"uri\": \"/service/hp_admin/mbr_admn/RatingEngineOverridesServices/v1\"   },   \"routing\": {     \"flowname\": \"RTE_NonKPHC_v1\",     \"xpath-options\": {       \"region\": \"[local-name()='Envelope']/*[local-name()='Body']//*[local-name()='getData']/*[local-name()='region']\",       \"mrn\": \"\",       \"mrntype\": \"\"     },     \"constants\": {       \"region\": \"\",       \"envlbl\": \"\",       \"urn\": \"\"     }   },   \"logging\": {     \"flowname\": \"LOG_Req_Res_Err_v1\",     \"log_everything\": \"true\",     \"gal_original_destination\": \"HP_SoldQuote_KPCanonicalXML\",     \"custom-fields-request\": [     ]   },   \"schema-validation\": {     \"request\": \"true\",     \"response\": \"true\",     \"fault\": \"true\"   },   \"req-transformation\": \"XFM_02_Req_Scrub_MetaData_Header\" }"
       }
     ]
   }
